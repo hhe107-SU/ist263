@@ -3,3 +3,24 @@ h2{font-size: 200%;}
 h3{font-size: 200%;}
 p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 .special {color: purple;}
+
+
+
+nav {
+    font-family: 'Arial', sans-serif;
+    padding: 10px; 
+    margin-bottom: 30px;
+    background-color: #E0E0E0;
+}
+
+a {
+    color: #0288D1;
+}
+
+a:hover {
+    color: #FF5252;
+}
+
+h1, h2, h3 {
+    color: #1A237E;
+}
