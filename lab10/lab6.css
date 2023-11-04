@@ -1,16 +1,53 @@
-h1{font-size: 300%;color:blue}
-h2{font-size: 200%;}
-h3{font-size: 200%;}
-p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-.special {color: purple;}
-
-.image1 {max-width:100%;
-
+/* Existing styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
 }
 
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.address {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-content {
+    width: 50%;
+}
+
+iframe {
+    width: 50%;
+    height: 450px;
+    border: 0;
+}
+
+.row {
+    display: block;
+    float: right;
+    clear: both;
+}
+
+/* Navigation styles */
 nav {
     font-family: 'Arial', sans-serif;
-    padding: 10px; 
+    padding: 10px;
     margin-bottom: 30px;
     background-color: #E0E0E0;
 }
@@ -25,4 +62,17 @@ a:hover {
 
 h1, h2, h3 {
     color: #1A237E;
+}
+
+
+@media (max-width: 768px) {
+    nav a {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav span {
+        display: none;
+    }
 }
