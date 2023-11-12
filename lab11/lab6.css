@@ -1,31 +1,28 @@
-h1{font-size: 300%;color:blue}
-h2{font-size: 200%;}
-h3{font-size: 200%;}
-p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-.special {color: purple;}
-
-
-
-nav {
-    font-family: 'Arial', sans-serif;
-    padding: 10px; 
-    margin-bottom: 30px;
-    background-color: #E0E0E0;
+/* Ensure text is readable against background */
+h1, h2, h3, p, .text1, nav a {
+    color: #000000; /* Black text for better contrast */
 }
 
+/* Adjust navigation background if necessary */
+nav {
+    background-color: #E0E0E0; /* Make sure this color contrasts well with black text */
+}
+
+/* Adjust link colors for normal and hover states */
 a {
-    color: #0288D1;
+    color: #005b96; /* A darker blue for better contrast */
 }
 
 a:hover {
-    color: #FF5252;
+    color: #ff5252; /* Ensure this color also contrasts well with the background */
 }
 
-h1, h2, h3 {
-    color: #1A237E;
-}
-.skip{
-    background-color: #ffbf00;
+/* Skip link should also have a contrasting color */
+.skip {
+    background-color: #ffbf00; /* Keep this color as it should have enough contrast with black border and text */
+    color: #000000; /* Black text for readability */
+
+   
     padding:5px;
     border: 1px solid #000000;
     text-decoration: none;
