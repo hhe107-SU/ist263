@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lab6.css">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 2em;
+            padding: 2em;
+        }
+
+        h1 {
+            font-size: 300%;
+            text-align: center;
+        }
+        
+        p {
+            font-weight: bolder;
+            margin-bottom: 2em;
+        }
+
+        .flexbox2 {
+            display: flex;
+            max-width: calc(100% - 2em); 
+        }
+
+        .flexbox2 > div {
+            flex: 1;
+        }
+
+        .skills {
+            flex: 3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skills div {
+            margin: 1em;
+        }
+
+        div img {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: aqua;
+            padding: 1em;
+            border-radius: 10px;
+            margin-left: 1em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="https://hhe107-su.github.io/ist263/portflio/">Home</a>
+        <span class="separator">|</span>
+        <a href="https://hhe107-su.github.io/ist263/portflio/skill.html">Skills</a>
+        <span class="separator">|</span>
+        <a href="https://hhe107-su.github.io/ist263/portflio/contact.html">Contact</a>
+    </nav>
+
+    <h1>Technical Skills</h1>
+
+    <p>My career has been focused on web development and I've consistently learned new frameworks and languages as the web technologies have changed. Below are my core skills.</p>
+
+    <div class="flexbox2">
+        <div class="skills">
+            <div><img src="../image/python.png" alt="python"> Python</div>
+            <div><img src="../image/CSS.png" alt="css"> HTML/CSS</div>
+            <div><img src="../image/SQL.jpg" alt="sql"> JavaScript</div>
+            <div><img src="../image/EXECEL.png" alt="Excel">Excel</div>
+        </div>
+
+        <aside>
+            <h2>Other Skills</h2>
+            <ul>
+                <li>Windows 10</li>
+                <li>Photoshop</li>
+                <li>Excel</li>
+                <li>SQL</li>
+                <LI>Microsoft Office</LI>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
+
+
+
+
+

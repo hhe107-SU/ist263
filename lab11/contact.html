@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .flex {
+            display: flex;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .address {
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        .contact-form {
+            display: flex;
+            
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form-content {
+            width: 50%;
+        }
+
+        iframe {
+            width: 50%;
+            height: 450px;
+            border: 0;
+        }
+
+        .row {
+            display: block;
+            float: right;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav><a href="https://hhe107-su.github.io/ist263/portflio/">bio</a>
+        <span class="separator">|</span>
+        <a href="https://hhe107-su.github.io/ist263/portflio/skill.html">skill</a>  
+        <span class="separator">|</span>
+        <a href="https://hhe107-su.github.io/ist263/portflio/contact.html">contact</a> </nav>
+
+<h1>Contact</h1>
+
+<div class="container">
+    
+    <div class="flex">
+        <div class="address">
+            <strong>Address</strong><br>
+            Haiyang He<br>
+            Hinds Hall<br>
+            Syracuse, NY 13210<br>
+            <a class="row" href="hhe107@syr.edu">hhe107@syr.edu</a><br>
+            <a class="row" href="https://www.linkedin.com">My LinkedIn Profile</a><br>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="form-content">
+            <label for="name"><strong>Your Name</strong>:</label>
+            <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+            <label><strong>Reason for contact</strong>:</label><br>
+            <input type="radio" id="office-hours" name="reason" value="office-hours">
+            <label for="office-hours">Office Hours</label><br>
+            <input type="radio" id="career-consulting" name="reason" value="career-consulting">
+            <label for="career-consulting">Career Consulting</label><br><br>
+
+            <label for="comments"><stong>Comments</stong>:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="33" placeholder="Type some stuff"></textarea><br><br>
+
+            <input type="submit" value="Send"><br><br>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.152538130604!2d-76.13594292385548!3d43.03822197113792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca155555%3A0xc1c69e4f641652c1!2sSyracuse%20University%20School%20of%20Information%20Studies%20(iSchool)!5e0!3m2!1sen!2sus!4v1694718024388!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</div>
+</body>
+</html>
