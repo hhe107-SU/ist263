@@ -52,11 +52,32 @@
             float: right;
             clear: both;
         }
+        .skip{
+    background-color: #ffbf00;
+    padding:5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions an element relative to the top left of the view port */
+    top:10px;
+    left: -999px; /*-999 pushes of the left side of the screen */
+
+
+}
+
+.skip:focus {
+    left:10px;  /*bring it back when it's been tabbed to */
+
+
+}
 
     </style>
+
+
+<a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+
 </head>
 
-<body>
+<body tabindedx="1" id="main">
     <nav><a href="https://hhe107-su.github.io/ist263/portflio/">bio</a>
         <span class="separator">|</span>
         <a href="https://hhe107-su.github.io/ist263/portflio/skill.html">skill</a>  

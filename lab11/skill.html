@@ -55,14 +55,33 @@
             border-radius: 10px;
             margin-left: 1em;
         }
+        .skip{
+    background-color: #ffbf00;
+    padding:5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions an element relative to the top left of the view port */
+    top:10px;
+    left: -999px; /*-999 pushes of the left side of the screen */
+
+
+}
+
+.skip:focus {
+    left:10px;  /*bring it back when it's been tabbed to */
+
+
+}
 
     </style>
 </head>
 
+<a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+
 <body>
 
     <nav>
-        <a href="https://hhe107-su.github.io/ist263/portflio/">Home</a>
+        <a href="https://hhe107-su.github.io/ist263/portflio/" tabindex="1" id="main">Home</a>
         <span class="separator">|</span>
         <a href="https://hhe107-su.github.io/ist263/portflio/skill.html">Skills</a>
         <span class="separator">|</span>
