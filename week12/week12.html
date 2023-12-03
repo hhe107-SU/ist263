@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Lab 12 Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color: #111111;
+            color: #ffffff;
+        }
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto;
+        }
+        #bigimages {margin-right: 100px;}
+        #planetinfo {padding: 100px;}
+        #thumbnails {width: 840px; margin: auto; padding-top: 20px;}
+
+        /* Additional styles to hide all but Mercury's image and text */
+        #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
+            display: none;
+        }
+
+        #venusinfo, #earthinfo, #marsinfo, #jupiterinfo, #saturninfo, #uranusinfo, #neptuneinfo {
+            display: none;
+        }
+
+        #bigimages img {
+            display: block;
+            margin: auto;
+        }
+
+        #planetinfo {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #mercurythumb, #venusthumb, #earththumb, #marsthumb, #jupiterthumb, #saturnthumb, #uranusthumb, #neptunethumb {
+            width: 100px;
+            cursor: pointer; /* Change cursor to indicate clickable */
+        }
+    </style>
+    <script>
+        // Function to hide all planet images and text
+        function PlanetsOff() {
+            var planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
+            for (var i = 0; i < planets.length; i++) {
+                document.getElementById(planets[i]).style.display = 'none';
+                document.getElementById(planets[i] + 'info').style.display = 'none';
+            }
+        }
+
+        // Adding the onload event listener to window object
+        window.onload = function() {
+            // Add click event listeners to thumbnails
+            var thumbnails = document.querySelectorAll('#thumbnails img');
+            for (var i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].addEventListener('click', PlanetsOff);
+            }
+        }
+    </script>
 </head>
 <body>
-    
+<div id="slideshow-container">
+    <div id="bigimages">
+        <!-- Images are initially visible only for Mercury -->
+        <img src="https://laferger.github.io/ist263/images/mercury.jpg" alt="mercury" id="mercury">
+        <!-- Other planet images, initially hidden via CSS -->
+        <img src="https://laferger.github.io/ist263/images/venus.jpg" alt="venus" id="venus" style="display:none;">
+        <!-- Repeat for each planet image -->
+    </div>
+    <div id="planetinfo">        
+        <h1>Planets Slideshow</h1>
+        <!-- Planet information, initially visible only for Mercury -->
+        <div id="mercuryinfo">
+            <!-- Mercury information here -->
+        </div>
+        <!-- Other planet information, initially hidden via CSS -->
+        <div id="venusinfo" style="display:none;">
+            <!-- Venus information here -->
+        </div>
+        <!-- Repeat for each planet information -->
+    </div>
+    <div id="thumbnails">
+        <!-- Thumbnails for each planet -->
+        <img src="https://laferger.github.io/ist263/images/mercury.jpg" alt="mercury" id="mercurythumb">
+        <!-- Repeat for each thumbnail image -->
+    </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 12 Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color: #111111;
+            color: #ffffff;
+        }
+        #slideshow-container {
+            width: 1200px;
+            margin: auto; /* Center the slideshow container */
+            background-color: #000;
+        }
+        #bigimages {
+            float: left; /* Float to the left for side-by-side layout */
+            width: 50%; /* Take up half of the container width */
+        }
+        #bigimages img {
+            display: none; /* Hide all images initially */
+            width: 100%; /* Scale image to fit the div width */
+        }
+        #bigimages img:first-child {
+            display: block; /* Show only the first image initially */
+        }
+        #planetinfo {
+            float: right; /* Float to the right for side-by-side layout */
+            width: 50%; /* Take up the remaining half of the container width */
+            padding: 50px; /* Padding to not touch the edges */
+            box-sizing: border-box; /* Include padding in the width calculation */
+        }
+        #planetinfo > div {
+            display: none; /* Hide all info divs initially */
+        }
+        #planetinfo > div:first-child {
+            display: block; /* Show only the first info div initially */
+        }
+        #thumbnails {
+            clear: both; /* Clear the float to align thumbnails properly */
+            text-align: center; /* Center the thumbnails */
+            padding-top: 20px;
+        }
+        #thumbnails img {
+            width: 100px; /* Set a fixed width for thumbnails */
+            cursor: pointer; /* Change cursor to indicate clickable items */
+        }
+    </style>
+    <script>
+        function hideAllPlanets() {
+            var images = document.querySelectorAll('#bigimages img');
+            var infos = document.querySelectorAll('#planetinfo > div');
+            images.forEach(function(img) {
+                img.style.display = 'none';
+            });
+            infos.forEach(function(info) {
+                info.style.display = 'none';
+            });
+        }
+
+        function showPlanet(planet) {
+            hideAllPlanets();
+            var bigImage = document.getElementById(planet);
+            var info = document.getElementById(planet + 'info');
+            bigImage.style.display = 'block';
+            info.style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbs = document.querySelectorAll('#thumbnails img');
+            thumbs.forEach(function(thumb) {
+                thumb.addEventListener('click', function() {
+                    var planet = this.alt.toLowerCase();
+                    showPlanet(planet);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="slideshow-container">
+    <div id="bigimages">
+        <!-- Big images of planets here -->
+    </div>
+    <div id="planetinfo">
+        <!-- Info about each planet here -->
+    </div>
+    <div id="thumbnails">
+        <!-- Thumbnails of planets here -->
+    </div>
+</div>
+</body>
+</html>
