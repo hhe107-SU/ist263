@@ -70,3 +70,57 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.language-selector {
+    /* Add your language selector styles here */
+}
+
+.content {
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1em;
+}
+
+/* Add responsive design and additional styling as needed */
