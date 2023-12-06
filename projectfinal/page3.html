@@ -69,13 +69,29 @@
         
         font-weight: bold;
     }
+    .skip {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #ffbf00; /* Visible color for the skip link */
+            color: #000; /* Text color for visibility */
+            padding: 8px;
+            z-index: 100; /* Ensure it's above other content */
+            transition: top 0.3s;
+        }
 
+        .skip:focus {
+            top: 10px; /* When focused, it becomes visible */
+        }
     /* Other styles */
 </style>
 
 </style>
 </head>
+
 <body>
+
+    <a href="#main" class="skip" tabindex="0">Skip to content</a>
 <div class="container">
     <header>
         <h1>Media Vault: Trailers and Clips</h1>
