@@ -107,6 +107,55 @@
         }
         h1{font-family: 'Noto Sans', sans-serif;}
 
+
+        /* Ensuring high contrast for all text */
+body, h1, a, p {
+    color: #fff; /* White text */
+}
+
+/* Ensuring links are also high contrast */
+a:link, a:visited {
+    color: #ffbf00; /* Bright color for links */
+}
+
+/* Ensuring high contrast for the header */
+header {
+    background-color: #333; /* A dark background for the header */
+    color: #fff; /* White text */
+}
+
+/* Additional styles for better visibility */
+a:hover, a:focus {
+    color: #ffbf00; /* Bright color for links when hovered or focused */
+    text-decoration: underline; /* Underlining links on hover/focus for better accessibility */
+}
+
+/* Ensuring form inputs and buttons are also high contrast */
+input[type="search"], button {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 1px solid #fff; /* White border for visibility */
+}
+
+input[type="search"]:focus, button:focus {
+    border-color: #ffbf00; /* Bright color for border when focused */
+    outline: none; /* Removing default focus outline */
+}
+
+/* Add a focus style for the skip link to ensure it is visible when focused */
+.skip:focus {
+    background-color: #ffbf00; /* Keeping the visible color */
+    color: #000; /* Ensuring the text is visible against the bright background */
+    outline: 2px solid #000; /* Adding an outline to make the focus state more visible */
+}
+
+/* Ensuring footer has high contrast */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+
+
      
     </style>
  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
