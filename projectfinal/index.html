@@ -155,6 +155,27 @@ footer {
     color: #fff; /* White text */
 }
 
+ /* Existing styles ... */
+        /* Additional Grid Layout styles for .main-container */
+        .main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
+            grid-gap: 20px; /* Space between grid items */
+        }
+
+        .evangelion-description, .links {
+            grid-column: 1 / -1; /* These items will span all columns */
+        }
+
+        /* Styling for the grid items */
+        .grid-item {
+            background: #1a1a1a; /* Slightly lighter background for the grid item */
+            border-radius: 8px; /* Rounded corners for the grid item */
+            padding: 15px; /* Padding inside the grid items */
+            color: #ccc; /* Text color for grid items */
+        }
+
+        /* Additional styles... */
 
      
     </style>
@@ -195,227 +216,16 @@ footer {
         <div class="main-container">
             <p class="welcome-statement">Welcome to EvaCentral, the comprehensive encyclopedia for the acclaimed anime series Neon Genesis Evangelion. Here, enthusiasts and newcomers alike can explore in-depth information, insights, and multimedia related to this iconic series.</p>
             <img src="../project/image/resized_封面.jpg" alt="Evangelion Banner">
+            </div>
             
-            
-            <div class="evangelion-description">
+            <div class="evangelion-description grid-item">
                 "Neon Genesis Evangelion", created by Hideaki Anno and produced by Gainax and Tatsunoko Production, is a seminal Japanese anime series that first aired from October 1995 to March 1996. Set in a post-apocalyptic world of 2015, following a catastrophic event known as the Second Impact, it presents a futuristic Tokyo-3, under threat from mysterious beings called "Angels". The protagonist, Shinji Ikari, a withdrawn teenager, is summoned by his estranged father, Gendo Ikari, to pilot a giant bio-mechanical robot, an "Evangelion", in the fight against these Angels. The series delves into the psychological struggles of Shinji and other pilots, including the mysterious Rei Ayanami and the competitive Asuka Langley Soryu, against a backdrop of existential despair, human identity, and the psychological trauma of the young pilots. It combines mecha warfare with complex psychological themes, religious and philosophical references, and intricate plot lines. Anno's personal battles with depression heavily influenced the series' dark and introspective tone. The original series, consisting of 26 episodes, concludes with abstract, introspective sequences exploring the characters' psyches. "The End of Evangelion", a film providing an alternate narrative conclusion, depicts NERV's battle against SEELE and the surreal apocalypse resulting from the "Human Instrumentality Project". Anno revisited the series with the "Rebuild of Evangelion" film series, a reimagining of the original story with new elements. The final film, "Evangelion: 3.0+1.0 Thrice Upon a Time", released in 2021, offers a more hopeful resolution, focusing on the characters overcoming trauma to find fulfillment. "Evangelion" has been highly influential, sparking spin-offs, films, and extensive merchandise. Praised for its deep character development and exploration of complex themes, it remains a cornerstone of the mecha genre and Japanese pop culture.
             </div>
 
-            <div class="links">
+            <div class="links grid-item">
                 <p><strong>Story line:</strong> <a href="https://hhe107-su.github.io/ist263/projectfinal/page2">www.evastoryline.com</a></p>
                 <p><strong>Media vault and Merchandise:</strong> <a href="https://hhe107-su.github.io/ist263/projectfinal/page3">www.evamediavaultandstoryline.com</a></p>
                 
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        &copy; 2023
-    </footer>
-</body>
-</html>
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Features include interactive elements, curated collections, and direct links to enrich your Evangelion experience.">
-    <title>EvaCentral: Home</title>
-    
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text for contrast */
-        }
-
-        header {
-            background-color: #333; /* A slightly lighter shade of black for the header */
-            color: white;
-            padding: 10px 0;
-        }
-
-        .header-container {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .search-signin {
-            display: flex;
-            align-items: center;
-        }
-
-        .search-signin form {
-            margin-right: 10px;
-        }
-
-        /* Grid layout for main content */
-        main {
-            width: 80%;
-            margin: 20px auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-        }
-
-        .welcome-statement,
-        .evangelion-description,
-        .links {
-            grid-column: 1 / -1;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow for a 'glowing' effect */
-        }
-
-        main img {
-            width: 100%;
-            height: auto;
-            grid-column: 1 / -1; /* Image will span all columns */
-        }
-
-        footer {
-            background-color: #333; /* Same as the header */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Styles for skip link */
-        .skip {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background-color: #ffbf00; /* Visible color for the skip link */
-            color: #000; /* Text color for visibility */
-            padding: 8px;
-            z-index: 100; /* Ensure it's above other content */
-            transition: top 0.3s;
-        }
-
-        .skip:focus {
-            top: 10px; /* When focused, it becomes visible */
-        }
-
-       
-
-        /* Styles for high contrast and visibility */
-        h1 {
-            font-family: 'Noto Sans', sans-serif;
-        }
-
-        body, h1, a, p {
-            color: #fff; /* White text */
-        }
-
-        a:link, a:visited {
-            color: #ffbf00; /* Bright color for links */
-        }
-
-        header {
-            background-color: #333; /* Dark background for header */
-        }
-
-        a:hover, a:focus {
-            color: #ffbf00; /* Bright color for links when hovered or focused */
-            text-decoration: underline;
-        }
-
-        input[type="search"], button {
-            background-color: #fff; /* White background for form inputs */
-            color: #000; /* Black text */
-            border: 1px solid #fff;
-        }
-
-        input[type="search"]:focus, button:focus {
-            border-color: #ffbf00;
-            outline: none;
-        }
-
-        .skip:focus {
-            background-color: #ffbf00;
-            color: #000;
-            outline: 2px solid #000;
-        }
-
-        footer {
-            background-color: #333;
-        }
-    </style>
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- Skip link -->
-    <a href="#main" class="skip" tabindex="0">Skip to content</a>
-
-    <header>
-        <div class="header-container">
-            <h1>EvaCentral</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Rules/Policies</a></li>
-                    <li><a href="#">Community</a></li>
-                </ul>
-            </nav>
-            <div class="search-signin">
-                <form>
-                    <label for="search">Search:</label>
-                    <input type="search" id="search" name="search" placeholder="Search">
-                    <button type="submit">🔍</button>
-                </form>
-                <button type="button">Sign In</button>
-            </div>
-        </div>
-    </header>
-
-    <main id="main" tabindex="-1">
-        <div class="main-container">
-            <p class="welcome-statement">Welcome to EvaCentral, the comprehensive encyclopedia for the acclaimed anime series Neon Genesis Evangelion. Here, enthusiasts and newcomers alike can explore in-depth information, insights, and multimedia related to this iconic series.</p>
-            <img src="../project/image/resized_封面.jpg" alt="Evangelion Banner">
-            
-            <!-- Description section -->
-            <div class="evangelion-description">
-                <!-- Description content -->
-            </div>
-
-            <!-- Links section -->
-            <div class="links">
-                <!-- Links content -->
             </div>
         </div>
     </main>
