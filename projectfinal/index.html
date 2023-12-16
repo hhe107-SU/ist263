@@ -91,7 +91,9 @@
 
         /* Styles for skip link */
         .skip {
-                position: absolute;
+        background-color: #ffbf00; /* Bright background color for high visibility */
+
+        position: absolute;
                 top: -40px;
                 left: 0;
                 background-color: #ffbf00; /* Visible color for the skip link */
@@ -99,11 +101,13 @@
                 padding: 8px;
                 z-index: 100; /* Ensure it's above other content */
                 transition: top 0.3s;
-            }
-    
-            .skip:focus {
-                top: 10px; /* When focused, it becomes visible */
-            }
+    }
+    .skip:focus {
+        top: 10px; /* When focused, it becomes visible */
+        color:#000; /* Black text for visibility on bright background */
+        
+    }
+         
         h1,p{font-family: 'Noto Sans', sans-serif;}
 
        
