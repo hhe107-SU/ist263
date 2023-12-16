@@ -15,13 +15,13 @@
             background-color: #000; /* Black background */
             color: #fff; /* White text for contrast */
         }
-
+    
         header {
             background-color: #333; /* A slightly lighter shade of black for the header */
             color: white;
             padding: 10px 0;
         }
-
+    
         .header-container {
             width: 80%;
             margin: auto;
@@ -29,49 +29,49 @@
             justify-content: space-between;
             align-items: center;
         }
-
+    
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-
+    
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
-
+    
         nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
-
+    
         .search-signin {
             display: flex;
             align-items: center;
         }
-
+    
         .search-signin form {
             margin-right: 10px;
         }
-
+    
         main {
             width: 80%;
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White shadow for a 'glowing' effect */
         }
-
+    
         main img {
             width: 100%;
             height: auto;
         }
-
+    
         .links p {
             margin: 15px 0;
         }
-
+    
         .welcome-statement {
             color: #ffffff; /* White text for readability */
             font-family: 'Arial', sans-serif;
@@ -79,7 +79,7 @@
             font-weight: bold;
             padding: 10px;
         }
-
+    
         footer {
             background-color: #333; /* Same as the header */
             color: white;
@@ -89,94 +89,67 @@
             bottom: 0;
             width: 100%;
         }
-
-        /* Styles for skip link */
+    
+       
         .skip {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background-color: #ffbf00; /* Visible color for the skip link */
-            color: #000; /* Text color for visibility */
-            padding: 8px;
-            z-index: 100; /* Ensure it's above other content */
-            transition: top 0.3s;
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #ffbf00; /* Yellow background for visibility */
+        color: #1a1a1a; /* Dark grey color for text to ensure visibility */
+        padding: 8px;
+        z-index: 100;
+        transition: top 0.3s;
+        border: 3px solid #1a1a1a; /* Dark grey border to improve visibility */
+        text-decoration: none; /* Removes underline from the link */
+    }
+
+    .skip:focus {
+        top: 10px;
+        /* Dark grey outline to improve visibility when focused */
+    }
+        h1, p {
+            font-family: 'Noto Sans', sans-serif;
         }
-
-        .skip:focus {
-            top: 10px; /* When focused, it becomes visible */
-        }
-        h1,p{font-family: 'Noto Sans', sans-serif;}
-
-
+    
         /* Ensuring high contrast for all text */
-body, h1, a, p {
-    color: #fff; /* White text */
-}
-
-/* Ensuring links are also high contrast */
-a:link, a:visited {
-    color: #ffbf00; /* Bright color for links */
-}
-
-
-header {
-    background-color: #333; /* A dark background for the header */
-    color: #fff; /* White text */
-}
-
-
-a:hover, a:focus {
-    color: #ffbf00; /* Bright color for links when hovered or focused */
-    text-decoration: underline; /* Underlining links on hover/focus for better accessibility */
-}
-
-/* Ensuring form inputs and buttons are also high contrast */
-input[type="search"], button {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
-    border: 1px solid #fff; /* White border for visibility */
-}
-
-input[type="search"]:focus, button:focus {
-    border-color: #ffbf00; /* Bright color for border when focused */
-    outline: none; /* Removing default focus outline */
-}
-
-/* Add a focus style for the skip link to ensure it is visible when focused */
-.skip:focus {
-    background-color: #ffbf00; /* Keeping the visible color */
-    color: #000; /* Ensuring the text is visible against the bright background */
-    outline: 2px solid #000; /* Adding an outline to make the focus state more visible */
-}
-
-/* Ensuring footer has high contrast */
-footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-}
-
-
-        /* Additional Grid Layout styles for .main-container */
-        .main-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid columns */
-            grid-gap: 20px; /* Space between grid items */
+        body, h1, a, p {
+            color: #fff; /* White text */
         }
-
-        .evangelion-description, .links {
-            grid-column: 1 / -1; /* These items will span all columns */
+    
+        /* Ensuring links are also high contrast */
+        a:link, a:visited {
+            color: #ffbf00; /* Bright color for links */
         }
-
-        /* Styling for the grid items */
-        .grid-item {
-            background: #1a1a1a; /* Slightly lighter background for the grid item */
-            border-radius: 8px; /* Rounded corners for the grid item */
-            padding: 15px; /* Padding inside the grid items */
-            color: #ccc; /* Text color for grid items */
+    
+        header {
+            background-color: #333; /* A dark background for the header */
+            color: #fff; /* White text */
         }
-
-        /* Additional styles... */
-
+    
+        a:hover, a:focus {
+            color: #ffbf00; /* Bright color for links when hovered or focused */
+            text-decoration: underline; /* Underlining links on hover/focus for better accessibility */
+        }
+    
+        /* Ensuring form inputs and buttons are also high contrast */
+        input[type="search"], button {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            border: 1px solid #fff; /* White border for visibility */
+        }
+    
+        input[type="search"]:focus, button:focus {
+            border-color: #ffbf00; 
+            outline: none; 
+        }
+    
+        footer {
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text */
+        }
+    </style>
+    
      
     </style>
  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
@@ -235,3 +208,6 @@ footer {
     </footer>
 </body>
 </html>
+
+
+
