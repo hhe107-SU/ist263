@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Media Vault: Trailers and Clips</title>
 <style>
-    /* Simple CSS for layout */
     .container {
         width: 80%;
         margin: 0 auto;
@@ -28,9 +27,7 @@
     }
     .video, .fanart, .merchandise {
         text-align: center; /* Center content */
-        
     }
-   
     .fanart {
         display: flex;
         justify-content: center;
@@ -42,7 +39,6 @@
         object-fit: cover; /* Ensures the images cover the area without distortion */
         margin: 10px; /* Add some space around the images */
     }
-
     .merchandise img {
         width: 300px; /* Set a specific width for merchandise images */
         height: auto; /* Height will scale proportionally */
@@ -53,89 +49,83 @@
     .merchandise a {
         display: block; /* Makes the link a block-level element to move the description to a new line */
         margin-top: 10px; /* Adds space between the image and the description */
+        color: #fff; /* Changed from black to white for better contrast */
+        text-decoration: underline; /* Optional: adds clarity to links */
     }
     body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text for contrast */
-        }
-        
-    /* Other styles */
-
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000; /* Black background */
+        color: #fff; /* White text for contrast */
+    }
     nav a {
         color: #fff; /* Changing text color to white for better visibility */
-        
         font-weight: bold;
     }
     .skip {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background-color: #ffbf00; /* Visible color for the skip link */
-            color: #000; /* Text color for visibility */
-            padding: 8px;
-            z-index: 100; /* Ensure it's above other content */
-            transition: top 0.3s;
-        }
-
-        .skip:focus {
-            top: 10px; /* When focused, it becomes visible */
-        }
-    /* Other styles */
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-color: #ffbf00; /* Visible color for the skip link */
+        color: #000; /* Text color for visibility */
+        padding: 8px;
+        z-index: 100; /* Ensure it's above other content */
+        transition: top 0.3s;
+    }
+    .skip:focus {
+        top: 10px; /* When focused, it becomes visible */
+    }
 </style>
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
 <body>
+    <a href="#media-vault" class="skip" tabindex="0">Skip to content</a>
+    <div class="container">
+        <header>
+            <h1>Media Vault: Trailers and Clips</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#trailers">Trailers</a></li>
+                <li><a href="#fanart">Fan Art</a></li>
+                <li><a href="#merchandise">Merchandise</a></li>
+            </ul>
+        </nav>
 
-    <a href="#main" class="skip" tabindex="0">Skip to content</a>
-<div class="container">
-    <header>
-        <h1>Media Vault: Trailers and Clips</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#trailers">Trailers</a></li>
-            <li><a href="#fanart">Fan Art</a></li>
-            <li><a href="#merchandise">Merchandise</a></li>
-        </ul>
-    </nav>
+        <div class="page-section" id="trailers">
+            <h2 id="media-vault">Welcome to the Media Vault!</h2>
+            <p>This section is your gateway to a diverse collection of Evangelion media, meticulously curated for fans to revisit iconic scenes and uncover new treasures. Whether you're looking to reexperience the series' milestones or find unseen content, the Media Vault offers a seamless navigation experience to meet your Evangelion needs!</p>
 
-    <div class="page-section" id="trailers">
-        <h2>Welcome to the Media Vault!</h2>
-        <p>This section is your gateway to a diverse collection of Evangelion media, meticulously curated for fans to revisit iconic scenes and uncover new treasures. Whether you're looking to reexperience the series' milestones or find unseen content, the Media Vault offers a seamless navigation experience to meet your Evangelion needs!</p>
-
-        <h2>Trailer</h2>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GZfuWMDEJpw?si=8GBcEUR58LicjYjQ" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h2>Trailer</h2>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GZfuWMDEJpw?si=8GBcEUR58LicjYjQ" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
 
-    <div class="page-section" id="fanart">
-        <h2>Fanmade Art</h2>
-        <div class="fanart">
-            <img src="../project/image/fanart1.png" alt="Fan Art">
-            <img src="../project/image/fanart2.jpg" alt="Fan Art2">
-            <img src="../project/image/fanart3.jpg" alt="Fan Art3">
+        <div class="page-section" id="fanart">
+            <h2>Fanmade Art</h2>
+            <div class="fanart">
+                <img src="../project/image/fanart1.png" alt="Fan Art">
+                <img src="../project/image/fanart2.jpg" alt="Fan Art2">
+                <img src="../project/image/fanart3.jpg" alt="Fan Art3">
+            </div>
         </div>
-    </div>
 
-    <div class="page-section" id="merchandise">
-        <h2>Merchandise: Official and Fan-made</h2>
-        <p>Explore a wide range of Neon Genesis Evangelion merchandise, including official releases and unique fan-made items. This page provides detailed product descriptions and convenient purchasing links, catering to fans seeking to expand their Evangelion collection.</p>
-        <div class="merchandise">
-            <img src="../project/image/merchandise.png" alt="Merchandise Image">
-            <a href="https://atsuko.com/collections/evangelion/products/evangelion-eva-unit-01-black-iridescent-reflective-anorak">EVA UNIT-01 IRIDESCENT REFLECTIVE BLACK ANORAK</a>
-            
+        <div class="page-section" id="merchandise">
+            <h2>Merchandise: Official and Fan-made</h2>
+            <p>Explore a wide range of Neon Genesis Evangelion merchandise, including official releases and unique fan-made items. This page provides detailed product descriptions and convenient purchasing links, catering to fans seeking to expand their Evangelion collection.</p>
+            <div class="merchandise">
+                <img src="../project/image/merchandise.png" alt="Merchandise Image">
+                <a href="https://atsuko.com/collections/evangelion/products/evangelion-eva-unit-01-black-iridescent-reflective-anorak">EVA UNIT-01 IRIDESCENT REFLECTIVE BLACK ANORAK</a>
+            </div>
         </div>
-    </div>
 
-    <footer>
-        &copy; Media Vault: Trailers and Clips
-    </footer>
-</div>
+        <footer>
+            &copy; Media Vault: Trailers and Clips
+        </footer>
+    </div>
 </body>
 </html>
