@@ -106,6 +106,9 @@
         }
         h1,p{font-family: 'Noto Sans', sans-serif;}
 
+       
+
+
 
         /* Ensuring high contrast for all text */
 body, h1, a, p {
@@ -174,8 +177,41 @@ footer {
             color: #ccc; /* Text color for grid items */
         }
 
-        /* Additional styles... */
+        @media (max-width: 768px) {
+        .header-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
+        nav ul {
+            padding-top: 20px;
+        }
+
+        nav ul li {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        .search-signin {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .search-signin form,
+        .search-signin button {
+            margin-top: 10px;
+        }
+
+        .welcome-statement,
+        h1, p {
+            font-size: 16px; 
+        }
+
+        main {
+            width: 95%; 
+        }
+    }
      
     </style>
  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
