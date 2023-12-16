@@ -92,22 +92,21 @@
     
        
         .skip {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background-color: #ffbf00; /* Yellow background for visibility */
-        color: #1a1a1a; /* Dark grey color for text to ensure visibility */
-        padding: 8px;
-        z-index: 100;
-        transition: top 0.3s;
-        border: 3px solid #1a1a1a; /* Dark grey border to improve visibility */
-        text-decoration: none; /* Removes underline from the link */
-    }
+                position: absolute;
+                top: -40px;
+                left: 0;
+                background-color: #ffbf00; /* Visible color for the skip link */
+                color: #000; /* Text color for visibility */
+                padding: 8px;
+                z-index: 100; /* Ensure it's above other content */
+                transition: top 0.3s;
+            }
+    
+            .skip:focus {
+                top: 10px; /* When focused, it becomes visible */
+            }
+  
 
-    .skip:focus {
-        top: 10px;
-        /* Dark grey outline to improve visibility when focused */
-    }
         h1, p {
             font-family: 'Noto Sans', sans-serif;
         }
